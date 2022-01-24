@@ -20,8 +20,8 @@ const useGetData = () => {
       const { data }: AxiosResponse = await axios(axiosConfig);
       setDataGetted(data);
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error(err);
-      alert('Something went wrong');
     }
   };
   useEffect(() => {
